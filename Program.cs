@@ -7,17 +7,17 @@ namespace SubMAtrix
     {
             static void Main(string[] args)
             {
-                string textPath = "text.txt";
+                string filePath = "text.txt";
                 int matrixSize = 0;
 
-                using (StreamReader firstLine = new StreamReader(textPath))
+                using (StreamReader firstLine = new StreamReader(filePath))
                 {
                     matrixSize = int.Parse(firstLine.ReadLine());
                 }
 
-                int[,] twoDimArray = MatrixHelper.Create2DArray(textPath, matrixSize);
+                int[,] twoDimArray = MatrixHelper.Create2DArray(filePath, matrixSize);
 
-                Console.WriteLine($"Matrix in {textPath} file:\n ");
+                Console.WriteLine($"Matrix in {filePath} file:\n ");
 
                 MatrixHelper.printMatrix(twoDimArray);
 

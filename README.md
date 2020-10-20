@@ -1,5 +1,5 @@
 # Sub-Matrix
-Console App - Find 2x2.
+C# Console App - Find 2x2.
 
 Program flow
 ------------
